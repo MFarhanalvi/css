@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="dth=device-dth, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* div p {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold;
+        } */
+
+        /* div>p {
+            background-color: rgb(4, 117, 155);
+            color: rgb(239, 96, 244)55, 255, 255);
+        } */
+
+
+        div+p {
+            color: white;
+            background-color: #D2302C;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is a paragraph inside li and this is not a direct child of div. It ll not get affected.
+                    </p>
+                </li>
+            </ul>
+            <p> This is the second paragraph and it ll get affected because it is the direct child of div.</p>
+        </div>
+        <p> This is the third pargraph and it ll get affected because it is also a direct child</p>
+    </div>
+    <p> This is the outer most paragraph and it ll not get affected. </p>
+</body>
+
+</html>

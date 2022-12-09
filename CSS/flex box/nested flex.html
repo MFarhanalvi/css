@@ -1,0 +1,46 @@
+
+<html>
+    <head>
+        <style>
+            .container{
+                background: #eee;
+                width: 300px;
+                margin: 50px auto 0;
+                padding: 0px;
+                border: 2px solid black;
+                flex-direction: column;
+            }
+            .items{
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                padding: 0px;
+                height: 100px;
+
+            }
+            .item2>.subitems{
+              background-color: burlywood;
+              color: aqua;
+              flex-grow: 1;
+              margin: 2px;
+            }
+
+            .item1{background-color: rgb(31, 44, 86);}
+            .item2{background-color: rgb(255, 0, 234);
+            display: flex;}
+            .item3{background-color: rgb(137, 2, 2);}
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items item1">one</div>
+            <div class="items item2">
+            <div class="subitems subitem1">A</div>
+            <div class="subitems subitem2">B</div>
+            <div class="subitems subitem3">C</div>   
+            </div>
+            <div class="items item3">three</div>
+        </div>
+    </body>
+</html>
